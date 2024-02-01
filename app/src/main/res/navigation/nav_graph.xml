@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentLockParam">
+
+    <fragment
+        android:id="@+id/fragmentLockParam"
+        android:name="com.lock.settings.ui.fragment.LockParamFragment"
+        android:label="@string/lock_parameters"
+        tools:layout="@layout/fragment_lock_parameters">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentEdit"
+        android:name="com.lock.settings.ui.fragment.EditFragment"
+        android:label="@string/edit"
+        tools:layout="@layout/fragment_edit_lock">
+
+    </fragment>
+
+    <action
+        android:id="@+id/action_fragmentLockParam_to_fragmentEdit"
+        app:destination="@id/fragmentEdit" />
+</navigation>

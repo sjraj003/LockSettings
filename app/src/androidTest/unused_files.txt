@@ -1,0 +1,51 @@
+
+    suspend fun getLockDetailsConfiguration(_lockDetails: MutableLiveData<LockConfigModel>) {
+        val call: Call<JSONObject?>? = ApiConfiguration.ipService.getLockDetails()
+         call?.enqueue(object : Callback<JSONObject?> {
+             override fun onResponse(call: Call<JSONObject?>, response: Response<JSONObject?>) {
+                 log(":response:"+response)
+                 log(":response body:"+response.body().toString())
+                 _lockDetails.value = Gson().fromJson(response.body().toString(), LockConfigModel::class.java)
+                 if (response.isSuccessful) {
+                     // Handle the successful response
+ //                    val jsonResponse = response.body()
+                 } else {
+                     // Handle the error
+                 }
+
+             }
+
+             override fun onFailure(call: Call<JSONObject?>, t: Throwable) {
+                 // Handle the failure
+                 log(":onFailure:"+call,";;Throwable:"+t)
+
+             }
+         })
+    }
+
+
+
+
+
+//    suspend fun getAllMainItems(): LiveData<LockConfigModel?> {
+//        refreshMainItems()
+//        return mainDao.getAllLockDetails()
+//    }
+/*
+    */
+
+//
+//    private fun refreshMainItemss() {
+//        ipService.getMainItems().enqueue(object : Callback<List<MainEntity>> {
+//            override fun onResponse(call: Call<List<MainEntity>>, response: Response<List<MainEntity>>) {
+//                if (response.isSuccessful) {
+//                    val mainItems = response.body()
+//                    mainItems?.let { mainDao.insertItems(it) }
+//                }
+//            }
+//
+//            override fun onFailure(call: Call<List<MainEntity>>, t: Throwable) {
+//                // Handle network request failure
+//            }
+//        })
+//    }

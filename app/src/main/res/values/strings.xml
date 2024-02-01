@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lock Settings</string>
+    <string name="lock_parameters">Lock Parameters</string>
+    <string name="edit">Edit</string>
+    <string name="primary">Primary</string>
+    <string name="search">Search</string>
+    <string name="secondary">Secondary</string>
+    <string name="default_value">Default value : </string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+</resources>

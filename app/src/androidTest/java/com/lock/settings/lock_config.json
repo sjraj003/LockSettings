@@ -1,0 +1,53 @@
+{
+  "lockVoltage": {
+    "values": [
+      "No Lock",
+      "12V",
+      "24V"
+    ],
+    "default": "No Lock"
+  },
+  "lockType": {
+    "values": [
+      "Lock with power",
+      "Lock without power"
+    ],
+    "default": "Lock with power"
+  },
+  "lockKick": {
+    "values": [
+      "None",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "default": "None"
+  },
+  "lockRelease": {
+    "values": [
+      "Off",
+      "On"
+    ],
+    "default": "Off",
+    "common": true
+  },
+  "lockReleaseTime": {
+    "range": {
+      "min": 0.1,
+      "max": 120
+    },
+    "unit": "seconds",
+    "default": 0.5
+  },
+  "lockAngle": {
+    "range": {
+      "min": 65,
+      "max": 125
+    },
+    "unit": "degrees",
+    "default": 90,
+    "common": true
+  }
+}

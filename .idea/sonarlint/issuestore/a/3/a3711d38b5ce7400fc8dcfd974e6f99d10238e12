@@ -1,0 +1,11 @@
+
+gkotlin:S6218"OOverride equals, hashCode and toString to consider array content in the method.(Ϊν§
+gkotlin:S6218"OOverride equals, hashCode and toString to consider array content in the method.(®„λέ
+lkotlin:S6218"OOverride equals, hashCode and toString to consider array content in the method.(υαθϊÿÿÿÿ
+lkotlin:S6218"OOverride equals, hashCode and toString to consider array content in the method.(βΏªόÿÿÿÿ
+ekotlin:S101"NRename class "lockVoltage" to match the regular expression ^[A-Z][a-zA-Z0-9]*$(Ϊν§
+bkotlin:S101"KRename class "lockType" to match the regular expression ^[A-Z][a-zA-Z0-9]*$(®„λέ
+gkotlin:S101"KRename class "lockKick" to match the regular expression ^[A-Z][a-zA-Z0-9]*$(υαθϊÿÿÿÿ
+jkotlin:S101"NRename class "lockRelease" to match the regular expression ^[A-Z][a-zA-Z0-9]*$(βΏªόÿÿÿÿ
+ikotlin:S101$"RRename class "lockReleaseTime" to match the regular expression ^[A-Z][a-zA-Z0-9]*$(ΰµ—Ά
+hkotlin:S101*"LRename class "lockAngle" to match the regular expression ^[A-Z][a-zA-Z0-9]*$(βς“ζÿÿÿÿÿ
